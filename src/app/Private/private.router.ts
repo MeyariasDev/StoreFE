@@ -6,10 +6,10 @@ import { AddProductComponent } from './add-product/add-product.component';
 
 const routes: Routes = [
     {
-        path: 'dashboard', component: PrivateComponent,
+        path: 'admin', component: PrivateComponent,
         children: [
             { path: 'panel', component: HomeComponent },
-            { path: '', redirectTo: '/panel', pathMatch: 'full' },
+            { path: '', redirectTo: 'panel', pathMatch: 'full' },
             { path: 'add-product', component: AddProductComponent },
         ]
     },
