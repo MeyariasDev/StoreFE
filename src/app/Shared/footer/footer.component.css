@@ -1,0 +1,73 @@
+footer {
+    background-color: black;
+    color: white;
+    height: 6rem;
+  }
+  
+  #social {
+    top: 50%;
+    text-align: center;
+    width: 100%;
+  }
+  
+  #social a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #393939;
+    margin: 2px 2px;
+  }
+  
+  .svg-inline--fa {
+    color: white;
+  }
+  
+  #social a:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    z-index: 5;
+  }
+  
+  #social a span {
+    position: absolute;
+    left: 50%;
+    color: #FFF;
+    display: none;
+    border-bottom: 2px solid #d5dbe1;
+    padding-bottom: 8px;
+    background-color: #171616;
+    top: -30px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    font-size: 80%;
+    white-space: nowrap;
+  }
+  
+  #social .facebook:hover {
+    background-color: #3b5998;
+  }
+  
+  #social .twitter:hover {
+    background-color: #55acee;
+  }
+  
+  #social .gplus:hover {
+    background-color: #dd4b39;
+  }
+  
+  #social .skype:hover {
+    background-color: #0175be;
+  }
+  
+  #social .github:hover {
+    background-color: #19022d;
+  }
