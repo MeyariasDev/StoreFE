@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  API_BACKEND: 'web-production-e023.up.railway.app'
 };
