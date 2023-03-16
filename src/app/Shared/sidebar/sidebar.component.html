@@ -1,4 +1,4 @@
-<div class="offcanvas offcanvas-start style-fundcanvas" tabindex="-1" id="offcanvasExample"
+<div *ngIf="isPublic" class="offcanvas offcanvas-start style-fundcanvas" tabindex="-1" id="offcanvasExample"
     aria-labelledby="offcanvasExampleLabel">
     <div class="offcanvas-header">
         <h5 class="offcanvas-title fw-bold fs-2 fst-italic" id="offcanvasExampleLabel">StoreNi</h5>
@@ -34,5 +34,69 @@
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
         </div>
+    </div>
+</div>
+
+<!-- Privado -->
+<div *ngIf="!isPublic">
+    <div class="sidebar-header">
+        <h3 class="brand">
+            <span class="ti-unlink"></span>
+            <span>easywire</span>
+        </h3>
+        <label for="sidebar-toggle" class="ti-menu-alt"></label>
+    </div>
+
+    <div class="sidebar-menu">
+        <ul>
+            <li>
+                <a href="">
+                    <span class="ti-home"></span>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="ti-face-smile"></span>
+                    <span>Team</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="ti-agenda"></span>
+                    <span>Tasks</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="ti-clipboard"></span>
+                    <span>Leaves</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="ti-folder"></span>
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="ti-time"></span>
+                    <span>Timesheet</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="ti-book"></span>
+                    <span>Contacts</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="ti-settings"></span>
+                    <span>Account</span>
+                </a>
+            </li>
+        </ul>
     </div>
 </div>

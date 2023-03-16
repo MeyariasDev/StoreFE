@@ -4,6 +4,8 @@ import { CardComponent } from './card/card.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
     declarations: [
@@ -11,7 +13,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
         FooterComponent,
         NavbarComponent,
         SidebarComponent],
-    imports: [CommonModule],
+    imports: [CommonModule, FormsModule, BrowserModule],
     exports: [
         CardComponent,
         FooterComponent,
