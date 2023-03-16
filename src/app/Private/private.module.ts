@@ -4,6 +4,7 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { HomeComponent } from './home/home.component';
 import { PrivateComponent } from './private.component';
 import { AppRoutingModule } from '../app-router';
+import { SharedModule } from '../Shared/shared.module';
 
 @NgModule({
     declarations: [
@@ -12,10 +13,13 @@ import { AppRoutingModule } from '../app-router';
         PrivateComponent],
     imports: [
         CommonModule,
-        AppRoutingModule],
+        AppRoutingModule,
+        SharedModule
+    ],
     exports: [
         PrivateComponent,
-        HomeComponent],
+        HomeComponent,
+        AddProductComponent],
     providers: [],
 })
 export class PrivateModule { }

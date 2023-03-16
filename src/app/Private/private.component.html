@@ -1,1 +1,11 @@
-<p>private works!</p>
+<body>
+    <input type="checkbox" id="sidebar-toggle">
+    <div class="sidebar">
+        <app-sidebar [isPublic]="false"></app-sidebar>
+    </div>
+
+    <div class="main-content">
+        <app-navbar [isPublic]="false"></app-navbar>
+        <router-outlet></router-outlet>
+    </div>
+</body>
