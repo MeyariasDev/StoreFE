@@ -71,7 +71,7 @@ input[readonly] {
   cursor: text;
   background-color: #fff;
 }
-/* Private
+/* Private */
 :root {
     --main-color: #027581;
     --color-dark: #1D2231;
@@ -505,4 +505,4 @@ tbody tr:nth-child(even) {
         padding-right: 1rem;
     }
 }
- */
+
