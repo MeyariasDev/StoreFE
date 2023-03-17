@@ -71,3 +71,7 @@ input[readonly] {
   cursor: text;
   background-color: #fff;
 }
+
+.bg-green-low {
+ background:#027581;
+}

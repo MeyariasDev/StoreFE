@@ -146,50 +146,6 @@ main {
     margin-bottom: 1rem;
 }
 
-.dash-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 3rem;
-}
-
-.card-single {
-    background: #fff;
-    border-radius: 7px;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
-}
-
-.card-body {
-    padding: 1.3rem 1rem;
-    display: flex;
-    align-items: center;
-}
-
-.card-body span {
-    font-size: 1.5rem;
-    color: #777;
-    padding-right: 1.4rem;
-}
-
-.card-body h5 {
-    color: var(--text-grey);
-    font-size: 1rem;
-}
-
-.card-body h4 {
-    color: var(--color-dark);
-    font-size: 1.1rem;
-    margin-top: .2rem;
-}
-
-.card-footer {
-    padding: .2rem 1rem;
-    background: #f9fafc;
-}
-
-.card-footer a {
-    color: var(--main-color);
-}
-
 .recent {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -201,27 +157,6 @@ main {
     grid-column-gap: 1.5rem;
 }
 
-.activity-card,
-.summary-card,
-.bday-card {
-    background: #fff;
-    border-radius: 7px;
-}
-
-.activity-card h3 {
-    color: var(--text-grey);
-    margin: 1rem;
-}
-
-.activity-card table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.activity-card thead {
-    background: #efefef;
-    text-align: left;
-}
 
 th, td {
     font-size: .9rem;
@@ -283,12 +218,6 @@ tbody tr:nth-child(even) {
     background-image: url(../../FE-Store/src/assets/Image/store.png);
 }
 
-.summary-card {
-    margin-bottom: 1.5rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-}
-
 .summary-single {
     padding: .5rem 1rem;
     display: flex;
@@ -316,10 +245,6 @@ tbody tr:nth-child(even) {
     display: flex;
     align-items: center;
     margin-bottom: .3rem;
-}
-
-.bday-card {
-    padding: 1rem;
 }
 
 .bday-img {
@@ -403,13 +328,7 @@ tbody tr:nth-child(even) {
 }
 
 @media only screen and (max-width: 860px) {
-    .dash-cards {
-        grid-template-columns: repeat(2,1fr);
-    }
-    
-    .card-single {
-        margin-bottom: 1rem;
-    }
+
     
     .activity-grid {
         display: block;
@@ -421,9 +340,9 @@ tbody tr:nth-child(even) {
 }
 
 @media only screen and (max-width: 600px) {
-    .dash-cards {
-        grid-template-columns: 100%;
-    }
+ol, ul {
+    padding-left: 0rem !important;
+}
 }
 
 @media only screen and (max-width: 450px) {
