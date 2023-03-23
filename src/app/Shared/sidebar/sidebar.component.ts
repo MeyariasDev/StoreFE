@@ -1,4 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-sidebar',
@@ -8,9 +10,20 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SidebarComponent implements OnInit {
 
   @Input() isPublic: boolean = true;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  routes(routerName:string){
+switch (routerName) {
+  case 'addProduct':
+    this.router.navigateByUrl('/admin/add-product')
+    break;
+
+  default:
+    break;
+}
   }
 
   displaylist() {

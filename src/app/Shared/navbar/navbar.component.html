@@ -58,15 +58,15 @@
 </nav>
 
 <!-- Private-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-green-low w-100" *ngIf="!isPublic">
+<nav class="navbar navbar-expand-lg navbar-dark bg-light w-100 border-bottom" *ngIf="!isPublic">
     <div class="container-fluid">
       <div class="form-group">
         <input type="text" class="form-control w-100" placeholder="Search" />
       </div>
 
       <div class="social-icons text-light d-flex">
-        <span class="ti-bell"></span>
-        <span class="ti-comment"></span>
+        <span class="ti-bell text-info fw-bold"></span>
+        <span class="ti-comment text-success fw-bold"></span>
       </div>
     </div>
 </nav>

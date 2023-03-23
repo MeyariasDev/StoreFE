@@ -75,3 +75,7 @@ input[readonly] {
 .bg-green-low {
  background:#027581;
 }
+
+.pointer{
+  cursor: pointer;
+}
