@@ -15,7 +15,7 @@ export class NavbarComponent implements OnInit {
 
   abrir() {
     const sidebar = (<HTMLInputElement>document.getElementById('sidebar'));
-    sidebar.classList.toggle("active");
+    sidebar.classList.toggle("centerList");
 
   }
 

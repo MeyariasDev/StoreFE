@@ -1,245 +1,72 @@
 <!-- Navbar to Public -->
 <nav *ngIf="isPublic" class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-        <button class="btn btn-dark" data-bs-toggle="offcanvas" href="#offcanvasExample"
-            aria-controls="offcanvasExample" aria-label="Example icon-button with menu icon">
-            <i class="fa-sharp fa-solid fa-bars"></i>
-        </button>
+  <div class="container-fluid">
+    <button
+      class="btn btn-dark"
+      data-bs-toggle="offcanvas"
+      href="#offcanvasExample"
+      aria-controls="offcanvasExample"
+      aria-label="Example icon-button with menu icon"
+    >
+      <i class="fa-sharp fa-solid fa-bars"></i>
+    </button>
 
-
-        <a class="navbar-brand">NicaStore</a>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                </li>
-            </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
+    <a class="navbar-brand">NicaStore</a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider" />
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
     </div>
+  </div>
 </nav>
 
-
-
 <!-- Private-->
-<nav *ngIf="!isPublic">
-    <div class="">
+<nav class="navbar navbar-expand-lg navbar-dark bg-light w-100 border-bottom" *ngIf="!isPublic">
+    <div class="container-fluid">
+      <div class="form-group">
+        <input type="text" class="form-control w-100" placeholder="Search" />
+      </div>
 
-        <header>
-            <div class="search-wrapper">
-                <span class="ti-search"></span>
-                <input type="search" placeholder="Search">
-            </div>
-
-            <div class="social-icons">
-                <span class="ti-bell"></span>
-                <span class="ti-comment"></span>
-                <div></div>
-            </div>
-        </header>
-
-        <main>
-
-            <h2 class="dash-title">Overview</h2>
-
-            <div class="dash-cards">
-                <div class="card-single">
-                    <div class="card-body">
-                        <span class="ti-briefcase"></span>
-                        <div>
-                            <h5>Account Balance</h5>
-                            <h4>$30,659.45</h4>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <a href="">View all</a>
-                    </div>
-                </div>
-
-                <div class="card-single">
-                    <div class="card-body">
-                        <span class="ti-reload"></span>
-                        <div>
-                            <h5>Pending</h5>
-                            <h4>$19,500.45</h4>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <a href="">View all</a>
-                    </div>
-                </div>
-
-                <div class="card-single">
-                    <div class="card-body">
-                        <span class="ti-check-box"></span>
-                        <div>
-                            <h5>Processed</h5>
-                            <h4>$20,659</h4>
-                        </div>
-                    </div>
-                    <div class="card-footer">
-                        <a href="">View all</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <section class="recent">
-                <div class="activity-grid">
-                    <div class="activity-card">
-                        <h3>Recent activity</h3>
-
-                        <div class="table-responsive">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Project</th>
-                                        <th>Start Date</th>
-                                        <th>End Date</th>
-                                        <th>Team</th>
-                                        <th>Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>App Development</td>
-                                        <td>15 Aug, 2020</td>
-                                        <td>22 Aug, 2020</td>
-                                        <td class="td-team">
-                                            <div class="img-1"></div>
-                                            <div class="img-2"></div>
-                                            <div class="img-3"></div>
-                                        </td>
-                                        <td>
-                                            <span class="badge success">Success</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Logo Design</td>
-                                        <td>15 Aug, 2020</td>
-                                        <td>22 Aug, 2020</td>
-                                        <td class="td-team">
-                                            <div class="img-1"></div>
-                                            <div class="img-2"></div>
-                                            <div class="img-3"></div>
-                                        </td>
-                                        <td>
-                                            <span class="badge warning">Processing</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Server setup</td>
-                                        <td>15 Aug, 2020</td>
-                                        <td>22 Aug, 2020</td>
-                                        <td class="td-team">
-                                            <div class="img-1"></div>
-                                            <div class="img-2"></div>
-                                            <div class="img-3"></div>
-                                        </td>
-                                        <td>
-                                            <span class="badge success">Success</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Front-end Design</td>
-                                        <td>15 Aug, 2020</td>
-                                        <td>22 Aug, 2020</td>
-                                        <td class="td-team">
-                                            <div class="img-1"></div>
-                                            <div class="img-2"></div>
-                                            <div class="img-3"></div>
-                                        </td>
-                                        <td>
-                                            <span class="badge warning">Processing</span>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Web Development</td>
-                                        <td>15 Aug, 2020</td>
-                                        <td>22 Aug, 2020</td>
-                                        <td class="td-team">
-                                            <div class="img-1"></div>
-                                            <div class="img-2"></div>
-                                            <div class="img-3"></div>
-                                        </td>
-                                        <td>
-                                            <span class="badge success">Success</span>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <div class="summary">
-                        <div class="summary-card">
-                            <div class="summary-single">
-                                <span class="ti-id-badge"></span>
-                                <div>
-                                    <h5>196</h5>
-                                    <small>Number of staff</small>
-                                </div>
-                            </div>
-                            <div class="summary-single">
-                                <span class="ti-calendar"></span>
-                                <div>
-                                    <h5>16</h5>
-                                    <small>Number of leave</small>
-                                </div>
-                            </div>
-                            <div class="summary-single">
-                                <span class="ti-face-smile"></span>
-                                <div>
-                                    <h5>12</h5>
-                                    <small>Profile update request</small>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="bday-card">
-                            <div class="bday-flex">
-                                <div class="bday-img"></div>
-                                <div class="bday-info">
-                                    <h5>Dwayne F. Sanders</h5>
-                                    <small>Birthday Today</small>
-                                </div>
-                            </div>
-
-                            <div class="text-center">
-                                <button>
-                                    <span class="ti-gift"></span>
-                                    Wish him
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
+      <div class="social-icons text-light d-flex">
+        <span class="ti-bell text-info fw-bold"></span>
+        <span class="ti-comment text-success fw-bold"></span>
+      </div>
     </div>
 </nav>
