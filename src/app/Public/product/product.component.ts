@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { IDataCard } from 'src/app/Interface/IDataCard';
+import { data } from 'src/app/Service/data';
 
 @Component({
   selector: 'app-product',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
 
-  constructor() { }
+  dataP: IDataCard[] = data;
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
+  backhome() {
+    this.router.navigateByUrl('/home');
 
+  }
 }

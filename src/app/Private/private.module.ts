@@ -5,12 +5,14 @@ import { HomeComponent } from './home/home.component';
 import { PrivateComponent } from './private.component';
 import { AppRoutingModule } from '../app-router';
 import { SharedModule } from '../Shared/shared.module';
+import { CategoriaComponent } from './categoria/categoria.component';
 
 @NgModule({
     declarations: [
         AddProductComponent,
         HomeComponent,
-        PrivateComponent],
+        PrivateComponent,
+        CategoriaComponent],
     imports: [
         CommonModule,
         AppRoutingModule,

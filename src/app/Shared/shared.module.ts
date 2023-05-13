@@ -6,19 +6,25 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { CarouselComponent } from './carousel/carousel.component';
 
 @NgModule({
     declarations: [
         CardComponent,
         FooterComponent,
         NavbarComponent,
-        SidebarComponent],
-    imports: [CommonModule, FormsModule, BrowserModule],
+        SidebarComponent,
+        CarouselComponent],
+    imports: [
+        CommonModule,
+        FormsModule,
+        BrowserModule],
     exports: [
         CardComponent,
         FooterComponent,
         NavbarComponent,
-        SidebarComponent
+        SidebarComponent,
+        CarouselComponent
     ],
     providers: [],
 })

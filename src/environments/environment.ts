@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  API_BACKEND: 'web-production-e023.up.railway.app'
+  API_BACKEND: 'https://web-production-e023.up.railway.app'
 };
 
 /*

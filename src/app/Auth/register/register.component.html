@@ -1,0 +1,40 @@
+<div class="body-register auth-body auth-size-body">
+    <div class="d-flex m-0 vh-100 row align-items-center justify-content-center">
+        <div class="card bg-body border-round borde-shadow " style="width: 30%;">
+            <div class="card-header text-center">
+                <i class="fa-solid fa-4x fa-user-plus" style="color: wheat;"></i>
+            </div>
+            <div class="card-body">
+                <form (ngSubmit)="register()" [formGroup]="formRegister">
+                    <div class="form-group mb-3">
+                        <label class="fw-bold titles">Nombre</label>
+                        <input type="text" class="form-control input-border" formControlName="name"
+                            placeholder="Escribe tu primer nombre" />
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="fw-bold titles">Apellido</label>
+                        <input type="text" class="form-control input-border" formControlName="lastname"
+                            placeholder="Escribe tu apellido" />
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="fw-bold titles">Email</label>
+                        <input type="email" class="form-control input-border" formControlName="email"
+                            placeholder="admin@gmail.com" />
+                    </div>
+                    <div class="form-group mb-3">
+                        <label class="fw-bold titles">Contraseña</label>
+                        <input type="password" class="form-control input-border" placeholder="********"
+                            autocomplete="new-password" formControlName="password" />
+                        <span id="passwordHelpInline" class="subtext">
+                            La contraseña debe de tener 8-20 Caracteres.
+                        </span>
+                    </div>
+                    <div class="text-center ">
+                        <button type="submit" class="btn btn-outline-light rounded-pill"
+                            style="width:50%">Iniciar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

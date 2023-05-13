@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,8 +25,6 @@ import { FormsModule } from '@angular/forms';
     PublicModule,
     PrivateModule,
     FormsModule,
-
-
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LogingComponent } from './loging/loging.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RegisterComponent } from './register/register.component';
+import { AppRoutingModule } from '../app-router';
 
 @NgModule({
-    declarations: [LogingComponent],
-    imports: [CommonModule, FormsModule],
+    declarations: [LogingComponent, RegisterComponent],
+    imports: [CommonModule, FormsModule, ReactiveFormsModule, AppRoutingModule],
     exports: [],
     providers: [],
 })

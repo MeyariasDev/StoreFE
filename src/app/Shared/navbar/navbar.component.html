@@ -1,13 +1,8 @@
 <!-- Navbar to Public -->
-<nav *ngIf="isPublic" class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav *ngIf="isPublic" class="navbar navbar-dark bg-dark navbar-expand-lg">
   <div class="container-fluid">
-    <button
-      class="btn btn-dark"
-      data-bs-toggle="offcanvas"
-      href="#offcanvasExample"
-      aria-controls="offcanvasExample"
-      aria-label="Example icon-button with menu icon"
-    >
+    <button class="btn btn-dark" data-bs-toggle="offcanvas" href="#offcanvasExample" aria-controls="offcanvasExample"
+      aria-label="Example icon-button with menu icon">
       <i class="fa-sharp fa-solid fa-bars"></i>
     </button>
 
@@ -15,20 +10,14 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" routerLinkActive="active" routerLink="home">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
         </li>
         <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
             Dropdown
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -45,12 +34,7 @@
         </li>
       </ul>
       <form class="d-flex">
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
     </div>
@@ -58,15 +42,15 @@
 </nav>
 
 <!-- Private-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-light w-100 border-bottom" *ngIf="!isPublic">
-    <div class="container-fluid">
-      <div class="form-group">
-        <input type="text" class="form-control w-100" placeholder="Search" />
-      </div>
-
-      <div class="social-icons text-light d-flex">
-        <span class="ti-bell text-info fw-bold"></span>
-        <span class="ti-comment text-success fw-bold"></span>
-      </div>
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-light w-100 border-bottom" *ngIf="!isPublic">
+  <div class="container-fluid">
+    <div class="form-group">
+      <input type="text" class="form-control w-100" placeholder="Search" />
     </div>
-</nav>
+
+    <div class="social-icons text-light d-flex">
+      <span class="ti-bell text-info fw-bold"></span>
+      <span class="ti-comment text-success fw-bold"></span>
+    </div>
+  </div>
+</nav>                                                                                                                                                                                                                      

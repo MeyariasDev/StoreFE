@@ -1,15 +1,21 @@
 <div class="row mb-5">
-    <div *ngFor="let item of data" class="col-md-3 mt-2">
-        <div class="card shadow zoom">
-            <div class="d-flex justify-content-center" >
-                <img [src]="item.img" class="card-img-top mt-1" [ngStyle]="{'width':item.size, 'height':item.size}" alt="...">
-            </div>
-            <div class="card-body">
-                <h3 class="card-title text-center fw-bold"> {{item.name}}</h3>
-                <p class="cup-text">
-                <h6><b> Precio:</b> <span class="text-danger" >${{item.price}}</span></h6>
+    <div *ngFor="let item of data, let i = index" class="col-md-3 mt-2 ">
+        <div class="card shadow  mt-3">
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">-20%</span>
+            <div class="zoom">
                 <div class="d-flex justify-content-center">
-                    <button class="btn btn-outline-success" >Ver más...</button>
+                    <img [src]="item.img" class="card-img-top mt-1" [ngStyle]="{'width':size, 'height':size}" alt="...">
+                </div>
+                <div class="card-body">
+                    <h3 class="subtext-cardwhite  text-center fw-bold"> {{item.name}}</h3>
+                    <h6><b class="subtext-cardwhite"> Precio:</b> <span
+                            class="text-danger paragraphs">${{item.price}}</span></h6>
+                    <p class="paragraphs overflow-ellipsis">Descripcion:{{item.descripcion}}</p>
+
+                    <div class="d-flex justify-content-center">
+                        <button class="btn custom-buttons" (click)="ViewMore(item.id)">Ver
+                            más...</button>
+                    </div>
                 </div>
             </div>
 

@@ -15,15 +15,17 @@ export class SidebarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  routes(routerName:string){
-switch (routerName) {
-  case 'addProduct':
-    this.router.navigateByUrl('/admin/add-product')
-    break;
-
-  default:
-    break;
-}
+  routes(routerName: string) {
+    switch (routerName) {
+      case 'addProduct':
+        this.router.navigateByUrl('/admin/add-product')
+        break;
+      case 'categorias':
+        this.router.navigateByUrl('/admin/categorias')
+        break;
+      default:
+        break;
+    }
   }
 
   displaylist() {
