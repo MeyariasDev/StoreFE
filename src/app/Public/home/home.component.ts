@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IDataCard } from '../../Interface/IDataCard';
+import { data } from 'src/app/Service/data';
+
 
 @Component({
   selector: 'app-home',
@@ -8,15 +10,7 @@ import { IDataCard } from '../../Interface/IDataCard';
 })
 export class HomeComponent implements OnInit {
 
-  products:IDataCard[]=[
-    {img:'assets/reloj.png', name:'Reloj Caballero', price:50, size:'160px' },
-    {img:'assets/EquipoLG.png', name:'EquipoLG', price:50, size:'160px' },
-    {img:'assets/CAMARAWIFI.png', name:'Camara WIFI', price:50, size:'160px' },
-    {img:'assets/LGREPRODUCTOR.png', name:'Reproductor LG', price:50, size:'160px' },
-    {img:'assets/TVLED55.png', name:'VL TCL 55 pulg', price:50, size:'160px' },
-    {img:'assets/AZUSPC.png', name:'Laptop Azus', price:50, size:'160px' },
-    {img:'assets/TelMororola.png', name:'Smart Phone', price:50, size:'160px' },
-  ]
+  products: IDataCard[] = data;
 
   constructor() { }
 

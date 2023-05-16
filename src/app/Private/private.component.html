@@ -1,15 +1,15 @@
 <body>
     <link rel="stylesheet" href="/assets/Styles/admin.css">
     <input type="checkbox" id="sidebar-toggle">
-    <div class="sidebar">
+    <div class="sidebar borde-shadow">
         <app-sidebar [isPublic]="false"></app-sidebar>
     </div>
 
     <div class="main-content">
         <app-navbar [isPublic]="false"></app-navbar>
-        <div class="container mt-3" >
-<router-outlet></router-outlet>
+        <div class="container mt-3 pb-3">
+            <router-outlet></router-outlet>
         </div>
-        
+
     </div>
 </body>

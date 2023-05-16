@@ -11,5 +11,10 @@ export class AddProductComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  imagen(event: any) {
+    console.log(event, 'tipo de eveento');
+
+
+  }
 
 }

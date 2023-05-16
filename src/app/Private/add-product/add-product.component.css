@@ -6,7 +6,7 @@
     border-radius: 10px 50px 10px 50px !important;
     border-style: outset;
   }
-  
+
   form .form-group .form-control {
     display: block;
     height: 3rem;
@@ -19,7 +19,7 @@
     border-radius: 0 !important;
     background-color: transparent !important;
     border: 0 !important;
-    border-bottom: 2.5px solid#027581 !important;
+    border-bottom: 2.5px solid#cde20c !important;
   }
   
   input[readonly] {

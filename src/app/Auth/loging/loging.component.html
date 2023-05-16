@@ -1,31 +1,48 @@
-<div class="container mt-5">
-    <div class="d-flex justify-content-center align-item-center">
-        <div class="card shadow-lg p-3 mb-5 bg-body border-round login-background" style="width: 40%;">
-            <div class="d-flex justify-content-center align-item-center ">
-                <!-- <img src="../../../assets/Image/superIm.png" class="card-img-top " style="width: 60%;" alt="..."> -->
+<div class=" body-login auth-body  auth-size-body">
+
+    <div class="d-flex m-0 vh-100 row align-items-center justify-content-center">
+
+        <div class="card bg-body border-round borde-shadow " style="width: 30%;">
+            <div class="text-center">
+
+                <i class="fa-solid fa-4x fa-user personalizeicon" style="color: wheat;"></i>
+
             </div>
             <div class="card-body">
-
                 <form>
                     <div class="form-group mb-3">
-                        <label class="fw-bold color-text">Usuario</label>
+                        <label class="fw-bold titles">Usuario</label>
                         <input type="email" class="form-control input-border" name="email" placeholder="admin@gmail.com"
                             [(ngModel)]="userInfo.email" onfocus="this.removeAttribute('readonly');" readonly />
                     </div>
                     <div class="form-group mb-3">
-                        <label class="fw-bold color-text">Contraseña</label>
-                        <input type="password" class="form-control input-border" name="password"
+                        <label class="fw-bold titles">Contraseña</label>
+                        <input type="password" class="form-control input-border" name="password" placeholder="********"
                             [(ngModel)]="userInfo.password" onfocus="this.removeAttribute('readonly');" readonly />
-                        <span id="passwordHelpInline" class="form-text">
+                        <span id="passwordHelpInline" class="subtext">
                             La contraseña debe de tener 8-20 Caracteres.
                         </span>
                     </div>
-                    <div class="text-center color-text">
-                        <button (click)="login()" class="btn btn-outline-success rounded-pill"
+                    <div class="text-center">
+                        <button (click)="login()" class="btn btn-outline-light rounded-pill"
                             style="width:50%">Iniciar</button>
+
+                    </div>
+
+
+                    <div class=" text-center mb-3 mt-1">
+                        <div id="emailHelp" class="form-text subtext">Si aun no posees una cuenta <em> ¡ Registrate
+                                Ahora !</em>.</div>
+                        <a class="register-a" [routerLink]="['/register']"
+                            routerLinkActive="router-link-active">Registrarse</a>
+
+
                     </div>
                 </form>
             </div>
+
+
         </div>
     </div>
+
 </div>
